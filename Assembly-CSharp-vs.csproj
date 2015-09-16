@@ -49,13 +49,14 @@
      <Compile Include="Assets\Code\CollisionScript.cs" />
      <Compile Include="Assets\Code\Constants.cs" />
      <Compile Include="Assets\Code\DestroyerScript.cs" />
-     <Compile Include="Assets\Code\EnemyScript.cs" />
-     <Compile Include="Assets\Code\HumanScript.cs" />
+     <Compile Include="Assets\Code\Enemy.cs" />
+     <Compile Include="Assets\Code\Humanoid.cs" />
+     <Compile Include="Assets\Code\LevelObjectScript.cs" />
      <Compile Include="Assets\Code\NewObjectPoolScript.cs" />
      <Compile Include="Assets\Code\ObjectOffScreenScript.cs" />
+     <Compile Include="Assets\Code\Player.cs" />
      <Compile Include="Assets\Code\PlayerAttackCollision.cs" />
-     <Compile Include="Assets\Code\PlayerScript.cs" />
-     <Compile Include="Assets\LevelObjectScript.cs" />
+     <Compile Include="Assets\Code\PlayerInput.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/EndlessRunner/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
