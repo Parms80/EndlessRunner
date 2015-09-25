@@ -50,6 +50,8 @@
      <Compile Include="Assets\Code\Constants.cs" />
      <Compile Include="Assets\Code\DestroyerScript.cs" />
      <Compile Include="Assets\Code\Enemy.cs" />
+     <Compile Include="Assets\Code\EnemySpawner.cs" />
+     <Compile Include="Assets\Code\GameLogic.cs" />
      <Compile Include="Assets\Code\Humanoid.cs" />
      <Compile Include="Assets\Code\LevelObjectScript.cs" />
      <Compile Include="Assets\Code\NewObjectPoolScript.cs" />
@@ -57,8 +59,35 @@
      <Compile Include="Assets\Code\Player.cs" />
      <Compile Include="Assets\Code\PlayerAttackCollision.cs" />
      <Compile Include="Assets\Code\PlayerInput.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\ImageLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Layer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Map.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\MapObject.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\MapObjectLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Object.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Property.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\PropertyCollection.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Tile.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileAnimation.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileGrid.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileObject.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileSet.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TiledMapComponent.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\AnimatedSprite.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\MathfExtensions.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\SortingOrderAutoCalculator.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\TaskManager.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\Triangulator.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Utils\clipper.cs" />
+     <Compile Include="Assets\X-UniTMX\NanoXML\NanoXMLParser.cs" />
+     <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\GameMaps\leveltiles.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zlib">
+ <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/EndlessRunner/Assets/X-UniTMX/Ionic.Zlib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Enemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/ObjectOffScreenScript.cs">
     <Files>
-      <File FileName="Assets/Code/NewObjectPoolScript.cs" Line="30" Column="4" />
-      <File FileName="Assets/Code/Enemy.cs" Line="7" Column="2" />
-      <File FileName="Assets/Code/Player.cs" Line="4" Column="20" />
-      <File FileName="Assets/Code/Humanoid.cs" Line="67" Column="24" />
+      <File FileName="Assets/Code/GameLogic.cs" Line="8" Column="19" />
+      <File FileName="Assets/Code/LevelObjectScript.cs" Line="15" Column="3" />
+      <File FileName="Assets/Code/EnemySpawner.cs" Line="39" Column="27" />
+      <File FileName="Assets/Code/NewObjectPoolScript.cs" Line="72" Column="9" />
+      <File FileName="Assets/Code/Humanoid.cs" Line="20" Column="19" />
+      <File FileName="Assets/Code/Constants.cs" Line="13" Column="35" />
+      <File FileName="Assets/Code/ObjectOffScreenScript.cs" Line="22" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

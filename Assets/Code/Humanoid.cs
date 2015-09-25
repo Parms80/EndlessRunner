@@ -14,8 +14,12 @@ public class Humanoid : MonoBehaviour {
 	
 	public virtual void Start () {
 		anim = GetComponent <Animator>();
-		switchToState(Constants.RUNNING);
 		groundCheck = transform.Find("GroundCheck");
+	}
+
+	public void reset()
+	{
+		switchToState(Constants.RUNNING);
 	}
 
 	void Update () {

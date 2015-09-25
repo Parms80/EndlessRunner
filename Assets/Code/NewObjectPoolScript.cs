@@ -13,45 +13,76 @@ public class NewObjectPoolScript : MonoBehaviour {
 	void Awake()
 	{
 		current = this;
+		setupPooledObjectsOfEachType();
+	}
+
+	void setupPooledObjectsOfEachType()
+	{
 		pooledObjects = new List<List<GameObject>> ();
 
-		foreach (GameObject poolObj in pooledObjectTypes)
+		foreach (GameObject poolObject in pooledObjectTypes)
 		{
-			List<GameObject> enemyTypeList = new List<GameObject>();
-
-			Debug.Log("Start: poolObj = "+poolObj);
-			for (int i = 0; i < pooledAmount; i++)
-			{
-				GameObject obj = (GameObject)Instantiate(poolObj);
-				obj.SetActive (false);
-				enemyTypeList.Add (obj);
-			}
-			pooledObjects.Add (enemyTypeList);
+			createInstancesAndAddToPool(poolObject);
 		}
 	}
 
-	void Start () 
+	void createInstancesAndAddToPool(GameObject poolObject)
 	{
+		List<GameObject> listOfObjectsOfThisType = new List<GameObject>();
+
+		for (int i = 0; i < pooledAmount; i++)
+		{
+			GameObject thisObject = (GameObject)Instantiate(poolObject);
+			thisObject.SetActive (false);
+			listOfObjectsOfThisType.Add(thisObject);
+		}
+		pooledObjects.Add(listOfObjectsOfThisType);
 	}
+
 
 	public GameObject GetPooledObject(int objectType)
 	{
 		for (int i = 0; i < pooledObjects[objectType].Count; i++)
 		{
-			if (!pooledObjects[objectType][i].activeInHierarchy)
+			GameObject thisObject = pooledObjects[objectType][i];
+
+			if (!thisObject.activeInHierarchy)
 			{
-				return pooledObjects[objectType][i];
+				return thisObject;
 			}
 		}
 
 		if (willGrow)
 		{
-			GameObject obj = (GameObject)Instantiate(pooledObjectTypes[objectType]);
-			pooledObjects[objectType].Add(obj);
-
+			GameObject obj = createNewObjectAndAddToList(objectType);
 			return obj;
 		}
 
 		return null;
+	}
+
+	GameObject createNewObjectAndAddToList(int objectType)
+	{
+		GameObject obj = (GameObject)Instantiate(pooledObjectTypes[objectType]);
+		pooledObjects[objectType].Add(obj);
+
+		return obj;
+	}
+
+	public int countActiveObjectsOfType(int objectType)
+	{
+		int numActive = 0;
+
+		for (int i = 0; i < pooledObjects[objectType].Count; i++) 
+		{
+			GameObject thisObject = pooledObjects[objectType][i];
+			
+			if (thisObject.activeInHierarchy)
+			{
+				numActive++;
+			}
+		}
+
+		return numActive;
 	}
 }

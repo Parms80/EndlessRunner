@@ -9,4 +9,6 @@ public class Constants : MonoBehaviour {
 	public const int ATTACKING = 3;
 
 	public const float ATTACK_DISTANCE = 2.5f;
+
+	public const int POOLOBJECT_ENEMY = 0;
 }

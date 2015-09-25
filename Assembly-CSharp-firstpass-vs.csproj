@@ -47,8 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+     <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\GameMaps\leveltiles.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zlib">
+ <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/EndlessRunner/Assets/X-UniTMX/Ionic.Zlib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
