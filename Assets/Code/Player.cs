@@ -75,4 +75,11 @@ public class Player : Humanoid {
 //		AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
 		anim.Play("Kick");
 	}
+	
+	private void MakeHumanFall (string otherObjectTag) {
+		
+		if (otherObjectTag == "EnemyHitCollision") {
+			base.takeHitAndFall();
+		}
+	}
 }

@@ -1,14 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/ObjectOffScreenScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/BackgroundParallax.cs">
     <Files>
-      <File FileName="Assets/Code/GameLogic.cs" Line="8" Column="19" />
-      <File FileName="Assets/Code/LevelObjectScript.cs" Line="15" Column="3" />
-      <File FileName="Assets/Code/EnemySpawner.cs" Line="39" Column="27" />
-      <File FileName="Assets/Code/NewObjectPoolScript.cs" Line="72" Column="9" />
-      <File FileName="Assets/Code/Humanoid.cs" Line="20" Column="19" />
-      <File FileName="Assets/Code/Constants.cs" Line="13" Column="35" />
-      <File FileName="Assets/Code/ObjectOffScreenScript.cs" Line="22" Column="2" />
+      <File FileName="Assets/Code/BackgroundScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/ObjectOffScreenScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/GameLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/EnemySpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/BackgroundParallax.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

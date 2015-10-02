@@ -50,6 +50,8 @@
      <Compile Include="Assets\X-UniTMX\Editor\TiledMapComponentEditor.cs" />
      <Compile Include="Assets\X-UniTMX\Editor\TiledMapObjectsWindow.cs" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\GameMaps\BackgroundLayer2.xml" />
+     <None Include="Assets\Resources\GameMaps\BackgroundLayer1.xml" />
      <None Include="Assets\Resources\GameMaps\leveltiles.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
@@ -57,11 +59,11 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
  <Reference Include="Ionic.Zlib">
  <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/EndlessRunner/Assets/X-UniTMX/Ionic.Zlib.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

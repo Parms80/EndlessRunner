@@ -7,6 +7,10 @@ public class Enemy : Humanoid {
 
 	public override void Start () {
 		base.Start ();
+		reset();
+	}
+	public override void reset(){
+		switchToState(Constants.RUNNING);
 		attacked = false;
 	}
 

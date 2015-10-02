@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\BackgroundParallax.cs" />
+     <Compile Include="Assets\Code\BackgroundScript.cs" />
      <Compile Include="Assets\Code\CollisionScript.cs" />
      <Compile Include="Assets\Code\Constants.cs" />
      <Compile Include="Assets\Code\DestroyerScript.cs" />
@@ -53,7 +55,6 @@
      <Compile Include="Assets\Code\EnemySpawner.cs" />
      <Compile Include="Assets\Code\GameLogic.cs" />
      <Compile Include="Assets\Code\Humanoid.cs" />
-     <Compile Include="Assets\Code\LevelObjectScript.cs" />
      <Compile Include="Assets\Code\NewObjectPoolScript.cs" />
      <Compile Include="Assets\Code\ObjectOffScreenScript.cs" />
      <Compile Include="Assets\Code\Player.cs" />
@@ -82,6 +83,8 @@
      <Compile Include="Assets\X-UniTMX\Code\Utils\clipper.cs" />
      <Compile Include="Assets\X-UniTMX\NanoXML\NanoXMLParser.cs" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\GameMaps\BackgroundLayer2.xml" />
+     <None Include="Assets\Resources\GameMaps\BackgroundLayer1.xml" />
      <None Include="Assets\Resources\GameMaps\leveltiles.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/permindersuman/Documents/Game Programming/Unity/EndlessRunner/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>

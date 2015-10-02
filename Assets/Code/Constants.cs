@@ -8,7 +8,7 @@ public class Constants : MonoBehaviour {
 	public const int TAKE_HIT = 2;
 	public const int ATTACKING = 3;
 
-	public const float ATTACK_DISTANCE = 2.5f;
+	public const float ATTACK_DISTANCE = 1.3f;
 
 	public const int POOLOBJECT_ENEMY = 0;
 }

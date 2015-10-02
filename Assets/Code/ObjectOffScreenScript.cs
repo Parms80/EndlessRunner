@@ -23,7 +23,7 @@ public class ObjectOffScreenScript : MonoBehaviour {
 	Vector3 getObjectRightEdge()
 	{
 		Vector3 rightEdge = transform.position;
-		rightEdge.x += coll.size.x;
+		rightEdge.x += coll.size.x * transform.localScale.x;
 
 		return rightEdge;
 	}

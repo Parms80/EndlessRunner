@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemySpawner : MonoBehaviour {
 
-	public Camera camera;
+	public Camera cam;
 
 	public void spawnEnemy(int enemyType)
 	{
@@ -34,7 +34,7 @@ public class EnemySpawner : MonoBehaviour {
 		float pixelsPerUnit = 100;
 		Vector3 spawnPosition;
 		
-		spawnPosition = camera.ScreenToWorldPoint (new Vector3 (Screen.width + (spriteWidth / 2)*pixelsPerUnit, 0, 0));
+		spawnPosition = cam.ScreenToWorldPoint (new Vector3 (Screen.width + (spriteWidth / 2)*pixelsPerUnit, 0, 0));
 		spawnPosition.z = 0;
 		spawnPosition.y += 5.0f;
 		enemy.transform.position = spawnPosition;

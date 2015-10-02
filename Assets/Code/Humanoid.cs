@@ -6,6 +6,7 @@ public class Humanoid : MonoBehaviour {
 	public float moveSpeed;
 	public float jumpStrength = 400.0f;
 	public float knockBackForce;
+	public AudioClip hitSound;
 	
 	protected Animator anim;
 	protected int state;
@@ -17,7 +18,7 @@ public class Humanoid : MonoBehaviour {
 		groundCheck = transform.Find("GroundCheck");
 	}
 
-	public void reset()
+	public virtual void reset()
 	{
 		switchToState(Constants.RUNNING);
 	}
@@ -54,6 +55,7 @@ public class Humanoid : MonoBehaviour {
 		switchToState(Constants.TAKE_HIT);
 		rigidbody2D.AddForce(new Vector2(knockBackForce, knockBackForce));
 		anim.Play ("Falling", 0);
+		AudioSource.PlayClipAtPoint(hitSound, transform.position);
 	}
 
 	protected void switchToState(int newState) {
