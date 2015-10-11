@@ -55,6 +55,7 @@
      <Compile Include="Assets\Code\EnemySpawner.cs" />
      <Compile Include="Assets\Code\GameLogic.cs" />
      <Compile Include="Assets\Code\Humanoid.cs" />
+     <Compile Include="Assets\Code\LevelObjectScript.cs" />
      <Compile Include="Assets\Code\NewObjectPoolScript.cs" />
      <Compile Include="Assets\Code\ObjectOffScreenScript.cs" />
      <Compile Include="Assets\Code\Player.cs" />

@@ -25,7 +25,7 @@ public class Enemy : Humanoid {
 
 				if (!attacked)
 				{
-					checkPunch();
+//					checkPunch();
 				}
 				break;
 
