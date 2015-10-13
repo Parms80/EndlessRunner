@@ -5,8 +5,8 @@ public class ObjectSpawner : MonoBehaviour {
 
 	public Camera cam;
 	public int objectType;
-	public int maxObjects = 3;
 	public float spawnWaitTime;
+	public int maxObjects;
 	float spawnTimeLeft;
 
 
@@ -95,5 +95,15 @@ public class ObjectSpawner : MonoBehaviour {
 			spawnObject();
 			spawnTimeLeft = spawnWaitTime;
 		}	
+	}
+
+	public int getMaxObjects()
+	{
+		return maxObjects;
+	}
+
+	public void setMaxObjects(int max)
+	{
+		maxObjects = max;
 	}
 }
