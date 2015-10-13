@@ -52,15 +52,16 @@
      <Compile Include="Assets\Code\Constants.cs" />
      <Compile Include="Assets\Code\DestroyerScript.cs" />
      <Compile Include="Assets\Code\Enemy.cs" />
-     <Compile Include="Assets\Code\EnemySpawner.cs" />
      <Compile Include="Assets\Code\GameLogic.cs" />
      <Compile Include="Assets\Code\Humanoid.cs" />
      <Compile Include="Assets\Code\LevelObjectScript.cs" />
      <Compile Include="Assets\Code\NewObjectPoolScript.cs" />
      <Compile Include="Assets\Code\ObjectOffScreenScript.cs" />
+     <Compile Include="Assets\Code\ObjectSpawner.cs" />
      <Compile Include="Assets\Code\Player.cs" />
      <Compile Include="Assets\Code\PlayerAttackCollision.cs" />
      <Compile Include="Assets\Code\PlayerInput.cs" />
+     <Compile Include="Assets\Code\Score.cs" />
      <Compile Include="Assets\X-UniTMX\Code\ImageLayer.cs" />
      <Compile Include="Assets\X-UniTMX\Code\Layer.cs" />
      <Compile Include="Assets\X-UniTMX\Code\Map.cs" />

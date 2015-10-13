@@ -1,42 +1,29 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameLogic : MonoBehaviour {
 
-	EnemySpawner enemySpawner;
-	EnemySpawner boxSpawner;
-	float spawnTimeLeft = 0.5f;
-	int maxEnemies = 2;
+	public Score score;
+	public Text levelText;
+	int level;
 
 	void Start () {
-//		enemySpawner = initialiseSpawner(Constants.POOLOBJECT_ENEMY);
-//		boxSpawner = initialiseSpawner(Constants.POOLOBJECT_BOX);
+		level = 0;
+		setLevelText();
 	}
 
 	void Update () {
-//		spawnEnemyOnTimeout(enemySpawner);
-//		spawnEnemyOnTimeout(boxSpawner);
+
+		if (score.getScore () >= 1000 && level == 0) {
+			level++;
+			setLevelText();
+		}
 	}
-//
-//	EnemySpawner initialiseSpawner(int objectType)
-//	{
-//		EnemySpawner spawner;
-//		spawner.setObjectType(objectType);
-//		return spawner;
-//	}
-//
-//	void spawnEnemyOnTimeout(EnemySpawner spawner)
-//	{
-//		int numEnemiesActive = NewObjectPoolScript.current.countActiveObjectsOfType(
-//			spawner.getObjectType());
-//
-//		spawnTimeLeft -= Time.deltaTime;
-//
-//		if (spawnTimeLeft < 0 && numEnemiesActive < maxEnemies) 
-//		{
-//			spawner.spawnEnemy();
-//			spawnTimeLeft = 0.5f;
-//		}	
-//	}
+	
+	void setLevelText()
+	{
+		levelText.text = "Level: " + level.ToString ();
+	}
 
 }
