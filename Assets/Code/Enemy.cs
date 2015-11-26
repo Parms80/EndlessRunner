@@ -25,7 +25,7 @@ public class Enemy : Humanoid {
 
 				if (!attacked)
 				{
-//					checkPunch();
+					checkPunch();
 				}
 				break;
 
@@ -37,7 +37,7 @@ public class Enemy : Humanoid {
 					attacked = true;
 					
 					anim.StopPlayback();
-					anim.Play("Run");
+					anim.Play(Constants.STRING_RUN);
 				}
 				
 				break;
@@ -52,16 +52,16 @@ public class Enemy : Humanoid {
 
 	private void checkPunch()
 	{
-		GameObject player = GameObject.Find("Player");
+		GameObject player = GameObject.Find(Constants.STRING_PLAYER);
 		float xDistance = (this.transform.position.x - player.transform.position.x);
 		float yDistance = Mathf.Abs(this.transform.position.y - player.transform.position.y);
 
-		if (yDistance < 1.0)
+		if (yDistance < Constants.INITIATE_PUNCH_DISTANCE)
 		{
 			if (xDistance > 0.0 && xDistance < Constants.ATTACK_DISTANCE)
 			{
 				anim.StopPlayback();
-				anim.Play("Attack");
+				anim.Play(Constants.STRING_ATTACK);
 				switchToState(Constants.ATTACKING);
 			}
 		}
@@ -69,7 +69,7 @@ public class Enemy : Humanoid {
 
 	private void MakeHumanFall (string otherObjectTag) {
 
-		if (otherObjectTag == "PlayerHitCollision") {
+		if (otherObjectTag == Constants.STRING_PLAYERHITCOLLISION) {
 			base.takeHitAndFall();
 		}
 	}

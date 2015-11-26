@@ -13,10 +13,10 @@ public class ObjectOffScreenScript : MonoBehaviour {
 
 		Vector3 objectRightEdge = getObjectRightEdge();
 
-		if (hasObjectGoneOffScreen(objectRightEdge))
-		{
-			SendMessage("HandleObjectOffScreen");
-		}
+		if (hasObjectGoneOffScreen (objectRightEdge)) {
+			SendMessage (Constants.STRING_HANDLEOBJECTOFFSCREEN);
+		} 
+		
 
 	}
 
@@ -32,5 +32,4 @@ public class ObjectOffScreenScript : MonoBehaviour {
 	{
 		return Camera.main.WorldToScreenPoint(obj).x <= 0;
 	}
-
 }

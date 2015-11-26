@@ -4,7 +4,7 @@ using System.Collections;
 public class Humanoid : MonoBehaviour {
 
 	public float moveSpeed;
-	public float jumpStrength = 400.0f;
+	public float jumpStrength;
 	public float knockBackForce;
 	public AudioClip hitSound;
 	
@@ -15,7 +15,7 @@ public class Humanoid : MonoBehaviour {
 	
 	public virtual void Start () {
 		anim = GetComponent <Animator>();
-		groundCheck = transform.Find("GroundCheck");
+		groundCheck = transform.Find(Constants.STRING_GROUNDCHECK);
 	}
 
 	public virtual void reset()
@@ -33,7 +33,7 @@ public class Humanoid : MonoBehaviour {
 	{
 		return Physics2D.Linecast(transform.position, 
 		                          groundCheck.position, 
-		                          1 << LayerMask.NameToLayer("Ground"));
+		                          1 << LayerMask.NameToLayer(Constants.STRING_GROUND));
 	}
 
 	public virtual void checkAndRunState()	{
@@ -47,14 +47,15 @@ public class Humanoid : MonoBehaviour {
 	protected void jump() {
 		anim.StopPlayback();	
 		switchToState(Constants.JUMPING);
-		rigidbody2D.AddForce(new Vector2(0f, jumpStrength));
-		anim.Play("Jump");
+		rigidbody2D.AddForce(new Vector2(Constants.HORIZONTAL_JUMP_STRENGTH, 
+		                                 jumpStrength));
+		anim.Play(Constants.STRING_JUMP);
 	}
 
 	protected void takeHitAndFall() {
 		switchToState(Constants.TAKE_HIT);
 		rigidbody2D.AddForce(new Vector2(knockBackForce, knockBackForce));
-		anim.Play ("Falling", 0);
+		anim.Play (Constants.STRING_FALLING, 0);
 		AudioSource.PlayClipAtPoint(hitSound, transform.position);
 	}
 
@@ -71,5 +72,10 @@ public class Humanoid : MonoBehaviour {
 	{
 		return anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && 
 			!anim.IsInTransition(0);
+	}
+
+	public int getState()
+	{
+		return state;
 	}
 }

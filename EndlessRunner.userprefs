@@ -1,18 +1,24 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/GameLogic.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/CameraScript.cs">
     <Files>
-      <File FileName="Assets/Code/ObjectSpawner.cs" Line="94" Column="4" />
-      <File FileName="Assets/Code/GameLogic.cs" Line="16" Column="1" />
-      <File FileName="Assets/Code/Humanoid.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/LevelObjectScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/NewObjectPoolScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/ObjectOffScreenScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Code/Enemy.cs" Line="73" Column="26" />
-      <File FileName="Assets/Code/Player.cs" Line="10" Column="46" />
-      <File FileName="Assets/Code/Score.cs" Line="15" Column="1" />
-      <File FileName="Assets/Code/CollisionScript.cs" Line="24" Column="1" />
+      <File FileName="Assets/Code/Player.cs" Line="67" Column="1" />
+      <File FileName="Assets/Code/Constants.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/Humanoid.cs" Line="34" Column="1" />
+      <File FileName="Assets/Code/Enemy.cs" Line="56" Column="1" />
+      <File FileName="Assets/Code/CameraScript.cs" Line="19" Column="71" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Code" expanded="True">
+              <Node name="CameraScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

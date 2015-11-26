@@ -19,6 +19,20 @@ public class ObjectSpawner : MonoBehaviour {
 	{
 		spawnObjectOnTimeout ();
 	}
+	
+	void spawnObjectOnTimeout()
+	{
+		int numObjectsActive = NewObjectPoolScript.current.countActiveObjectsOfType(
+			objectType);
+		
+		spawnTimeLeft -= Time.deltaTime;
+		
+		if (spawnTimeLeft < 0 && numObjectsActive < maxObjects) 
+		{
+			spawnObject();
+			spawnTimeLeft = spawnWaitTime;
+		}	
+	}
 
 	public void spawnObject()
 	{
@@ -29,11 +43,11 @@ public class ObjectSpawner : MonoBehaviour {
 			putObjectOnGround(obj);
 			
 			obj.SetActive(true);
-			obj.SendMessage ("reset");
+			obj.SendMessage (Constants.STRING_RESET);
 		}
 		catch (UnityException e)
 		{
-			Debug.Log("Error spawning object: "+e);
+			Debug.Log(Constants.STRING_ERRORSPAWNINGOBJECT+""+e);
 		}
 	}
 
@@ -59,42 +73,29 @@ public class ObjectSpawner : MonoBehaviour {
 		
 		spawnPosition = cam.ScreenToWorldPoint (new Vector3 (getScreenXOfSpriteOffScreen(obj), 0, 0));
 		spawnPosition.z = 0;
-		spawnPosition.y += 5.0f;
+		spawnPosition.y += Constants.SPAWN_Y_POSITION;
 		obj.transform.position = spawnPosition;
 	}
 
 	float getScreenXOfSpriteOffScreen(GameObject obj)
 	{
 		float spriteWidth = obj.renderer.bounds.size.x;
-		float pixelsPerUnit = 100;
+		float pixelsPerUnit = Constants.PIXELS_PER_UNIT;
 		return Screen.width + (spriteWidth / 2)*pixelsPerUnit;
 	}
 	
 	void putObjectOnGround(GameObject obj)
 	{
 		Vector2 linecastStartPos = new Vector2 (obj.transform.position.x, 0);
-		Vector2 linecastEndPos = new Vector2 (obj.transform.position.x, -50);
+		Vector2 linecastEndPos = new Vector2 (obj.transform.position.x, 
+		                                      Constants.LINECAST_END_Y);
 		RaycastHit2D groundPos = Physics2D.Linecast (linecastStartPos, 
-		                                             linecastEndPos, 1 << LayerMask.NameToLayer ("Ground"));
+		                                             linecastEndPos, 
+		                                             1 << LayerMask.NameToLayer(Constants.STRING_GROUND));
 		
 		Vector3 spawnPosition = obj.transform.position;
 		spawnPosition.y = groundPos.transform.position.y;
 		obj.transform.position = spawnPosition;
-	}
-
-	
-	void spawnObjectOnTimeout()
-	{
-		int numObjectsActive = NewObjectPoolScript.current.countActiveObjectsOfType(
-			objectType);
-		
-		spawnTimeLeft -= Time.deltaTime;
-		
-		if (spawnTimeLeft < 0 && numObjectsActive < maxObjects) 
-		{
-			spawnObject();
-			spawnTimeLeft = spawnWaitTime;
-		}	
 	}
 
 	public int getMaxObjects()

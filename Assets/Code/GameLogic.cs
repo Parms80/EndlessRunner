@@ -8,6 +8,7 @@ public class GameLogic : MonoBehaviour {
 	public Text levelText;
 	public ObjectSpawner enemySpawner;
 	public ObjectSpawner boxSpawner;
+	public ObjectSpawner highBoxSpawner;
 
 	int level;
 	int scoreLastUpdate;
@@ -17,6 +18,7 @@ public class GameLogic : MonoBehaviour {
 		setLevelText();
 		enemySpawner.setMaxObjects (2);
 		boxSpawner.setMaxObjects (1);
+		highBoxSpawner.setMaxObjects (1);
 		scoreLastUpdate = 0;
 	}
 
@@ -35,8 +37,8 @@ public class GameLogic : MonoBehaviour {
 		bool qualified = false;
 		int currentScore = score.getScore();
 
-		if (scoreLastUpdate < (level+1)*1000 &&
-		    currentScore >= (level+1)*1000) 
+		if (scoreLastUpdate < (level+1)*Constants.SCORE_FOR_NEXT_LEVEL &&
+		    currentScore >= (level+1)*Constants.SCORE_FOR_NEXT_LEVEL) 
 		{
 			qualified = true;
 		}
@@ -58,6 +60,6 @@ public class GameLogic : MonoBehaviour {
 	
 	void setLevelText()
 	{
-		levelText.text = "Level: " + level.ToString ();
+		levelText.text = Constants.STRING_LEVEL + "" + level.ToString ();
 	}
 }

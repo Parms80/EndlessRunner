@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: 548ecc7e4bbd24221b940e894241c517
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: goemon_spritesheet_0
+    21300002: goemon_spritesheet_1
+    21300004: goemon_spritesheet_2
+    21300006: goemon_spritesheet_3
+    21300008: goemon_spritesheet_4
+    21300010: goemon_spritesheet_5
+    21300012: goemon_spritesheet_6
+    21300014: goemon_spritesheet_7
+    21300016: goemon_spritesheet_8
+    21300018: goemon_spritesheet_9
+    21300020: goemon_spritesheet_10
+    21300022: goemon_spritesheet_11
+    21300024: goemon_spritesheet_12
+    21300026: goemon_spritesheet_13
+    21300028: goemon_spritesheet_14
+    21300030: goemon_spritesheet_15
+    21300032: goemon_spritesheet_16
+    21300034: goemon_spritesheet_17
+    21300036: goemon_spritesheet_18
+    21300038: goemon_spritesheet_19
+    21300040: goemon_spritesheet_20
+    21300042: goemon_spritesheet_21
+    21300044: goemon_spritesheet_22
+    21300046: goemon_spritesheet_23
+    21300048: goemon_spritesheet_24
+    21300050: goemon_spritesheet_25
+    21300052: goemon_spritesheet_26
+    21300054: goemon_spritesheet_27
+    21300056: goemon_spritesheet_28
+    21300058: goemon_spritesheet_29
+    21300060: goemon_spritesheet_30
+    21300062: goemon_spritesheet_31
+    21300064: goemon_spritesheet_32
+    21300066: goemon_spritesheet_33
+    21300068: goemon_spritesheet_34
+    21300070: goemon_spritesheet_35
+    21300072: goemon_spritesheet_36
+    21300074: goemon_spritesheet_37
+    21300076: goemon_spritesheet_38
+    21300078: goemon_spritesheet_39
+    21300080: goemon_spritesheet_40
+    21300082: goemon_spritesheet_41
+    21300084: goemon_spritesheet_42
+    21300086: goemon_spritesheet_43
+    21300088: goemon_spritesheet_44
+    21300090: goemon_spritesheet_45
+    21300092: goemon_spritesheet_46
+    21300094: goemon_spritesheet_47
+    21300096: goemon_spritesheet_48
+    21300098: goemon_spritesheet_49
+    21300100: goemon_spritesheet_50
+    21300102: goemon_spritesheet_51
+    21300104: goemon_spritesheet_52
+    21300106: goemon_spritesheet_53
+    21300108: goemon_spritesheet_54
+    21300110: goemon_spritesheet_55
+    21300112: goemon_spritesheet_56
+    21300114: goemon_spritesheet_57
+    21300116: goemon_spritesheet_58
+    21300118: goemon_spritesheet_59
+    21300120: goemon_spritesheet_60
+    21300122: goemon_spritesheet_61
+    21300124: goemon_spritesheet_62
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: goemon_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 220
+        width: 19
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 220
+        width: 21
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 220
+        width: 18
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 220
+        width: 18
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 21
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 220
+        width: 18
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 213
+        width: 27
+        height: 43
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 220
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 220
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 43
+        height: 33
+      alignment: 9
+      pivot: {x: .75, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 184
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 162
+        width: 41
+        height: 37
+      alignment: 9
+      pivot: {x: .74000001, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 184
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 162
+        width: 37
+        height: 48
+      alignment: 9
+      pivot: {x: .680000007, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 161
+        width: 49
+        height: 45
+      alignment: 9
+      pivot: {x: .200000003, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 184
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 184
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 161
+        width: 49
+        height: 32
+      alignment: 9
+      pivot: {x: .170000002, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 148
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 76
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 40
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goemon_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

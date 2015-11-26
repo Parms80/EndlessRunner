@@ -25,6 +25,6 @@ public class Score : MonoBehaviour {
 
 	void setScoreText()
 	{
-		scoreText.text = "Score: " + score.ToString ();
+		scoreText.text = Constants.STRING_HUD_SCORE + "" + score.ToString ();
 	}
 }

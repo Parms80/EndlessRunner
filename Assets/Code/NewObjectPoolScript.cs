@@ -6,7 +6,7 @@ public class NewObjectPoolScript : MonoBehaviour {
 
 	public static NewObjectPoolScript current;
 	public List<GameObject> pooledObjectTypes;
-	public int pooledAmount = 10;
+	public int pooledAmount = Constants.MAX_OBJECTS_PER_TYPE;
 	public bool willGrow = true;
 	List<List<GameObject>> pooledObjects;
 

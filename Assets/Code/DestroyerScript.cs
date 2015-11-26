@@ -5,7 +5,7 @@ public class DestroyerScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "Player") {
+		if (other.tag == Constants.STRING_PLAYER) {
 
 			Debug.Break ();
 

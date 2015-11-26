@@ -43,7 +43,7 @@ public class Player : Humanoid {
 				switchToState(Constants.RUNNING);
 				
 				anim.StopPlayback();
-				anim.Play("Run");
+				anim.Play(Constants.STRING_RUN);
 			}
 			
 			break;
@@ -55,7 +55,7 @@ public class Player : Humanoid {
 			if (grounded)
 			{
 				switchToState(Constants.RUNNING);
-				anim.Play("Run");
+				anim.Play(Constants.STRING_RUN);
 			}
 			
 			break;
@@ -65,20 +65,19 @@ public class Player : Humanoid {
 	private void moveForward()
 	{
 		float moveDistance = moveSpeed * Time.deltaTime;
-		transform.Translate(Vector3.right * moveDistance);
+		transform.Translate(Vector3.right * moveDistance);;
 	}
 
 	private void doKick()
 	{
 		anim.StopPlayback();	
 		switchToState(Constants.ATTACKING);
-//		AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
-		anim.Play("Kick");
+		anim.Play(Constants.STRING_KICK);
 	}
 	
 	private void MakeHumanFall (string otherObjectTag) {
 		
-		if (otherObjectTag == "EnemyHitCollision") {
+		if (otherObjectTag == Constants.STRING_ENEMYHITCOLLISION) {
 			base.takeHitAndFall();
 		}
 	}
