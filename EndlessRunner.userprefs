@@ -1,19 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/CameraScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Player.cs">
     <Files>
-      <File FileName="Assets/Code/Player.cs" Line="67" Column="1" />
-      <File FileName="Assets/Code/Constants.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/Enemy.cs" Line="79" Column="1" />
+      <File FileName="Assets/Code/Player.cs" Line="46" Column="1" />
+      <File FileName="Assets/Code/Constants.cs" Line="45" Column="1" />
       <File FileName="Assets/Code/Humanoid.cs" Line="34" Column="1" />
-      <File FileName="Assets/Code/Enemy.cs" Line="56" Column="1" />
-      <File FileName="Assets/Code/CameraScript.cs" Line="19" Column="71" />
+      <File FileName="Assets/Code/LevelObjectScript.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Code" expanded="True">
-              <Node name="CameraScript.cs" selected="True" />
+              <Node name="Player.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -7,6 +7,7 @@ public class Player : Humanoid {
  
 	public override void Start () {
 		base.Start ();
+		base.reset ();
 		playerInput = GetComponent <PlayerInput>();
 	}
 	
@@ -21,7 +22,7 @@ public class Player : Humanoid {
 		switch (state) 
 		{
 		case Constants.RUNNING:
-			
+
 			moveForward();
 
 			if (kickPressed) {
@@ -55,6 +56,7 @@ public class Player : Humanoid {
 			if (grounded)
 			{
 				switchToState(Constants.RUNNING);
+				anim.StopPlayback();
 				anim.Play(Constants.STRING_RUN);
 			}
 			

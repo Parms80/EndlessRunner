@@ -21,6 +21,7 @@ public class Humanoid : MonoBehaviour {
 	public virtual void reset()
 	{
 		switchToState(Constants.RUNNING);
+		anim.Play(Constants.STRING_RUN);
 	}
 
 	void Update () {
