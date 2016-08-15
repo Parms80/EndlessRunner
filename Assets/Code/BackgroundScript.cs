@@ -16,7 +16,7 @@ public class BackgroundScript : MonoBehaviour {
 		{
 			GameObject pane = transform.GetChild(i).gameObject;
 			
-			if (checkIfOffscreen(pane))
+			if (isOffscreen(pane))
 			{
 				GameObject rightMostPane = getRightMostPane();
 				movePaneToRight(pane, rightMostPane);
@@ -24,7 +24,7 @@ public class BackgroundScript : MonoBehaviour {
 		}
 	}
 
-	bool checkIfOffscreen(GameObject pane)
+	bool isOffscreen(GameObject pane)
 	{
 		Vector3 objectRightEdge = getObjectRightEdge(pane);
 

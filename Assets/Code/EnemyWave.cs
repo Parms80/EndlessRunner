@@ -1,58 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ObjectSpawner : MonoBehaviour {
+public class EnemyWave : MonoBehaviour {
 
+	private int[] enemySpacing;
+	private int numEnemies;
 	public Camera cam;
-	public int objectType;
-	public float spawnWaitTime;
-	public int maxObjects;
-	float spawnTimeLeft;
-
 
 	void Start()
 	{
-		spawnTimeLeft = spawnWaitTime;
+		numEnemies = 4;
+		enemySpacing = new int[10];
+		createNewWave ();
 	}
 
-	void Update()
-	{
-		spawnObjectOnTimeout ();
-	}
-	
-	void spawnObjectOnTimeout()
-	{
-		spawnTimeLeft -= Time.deltaTime;
-		
-		if (readyToSpawn()) 
-		{
-			spawnObject();
-			spawnTimeLeft = spawnWaitTime;
-		}	
-	}
-
-	bool readyToSpawn()
-	{
-		int numObjectsActive = NewObjectPoolScript.current.countActiveObjectsOfType(
-			objectType);
-
-		if (spawnTimeLeft < 0 && numObjectsActive < maxObjects) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public void spawnObject()
+	void createNewWave()
 	{
 		try
 		{
-			GameObject obj = getObjectFromPool();
-			placeObjectOffScreen(obj);
-			putObjectOnGround(obj);
-			
-			obj.SetActive(true);
-			obj.SendMessage (Constants.STRING_RESET);
+			createFormation();
+			Vector3 lastPosition = new Vector3(0,0,0);
+
+			for (int currentEnemyIndex = 0; currentEnemyIndex < numEnemies; currentEnemyIndex++)
+			{
+				GameObject obj = getObjectFromPool ();
+
+				placeObjectOffScreen(obj);
+				if (currentEnemyIndex > 0)
+				{
+					adjustSpacing(obj, currentEnemyIndex, lastPosition);
+				}
+				putObjectOnGround(obj);
+				obj.SetActive(true);
+				obj.SendMessage (Constants.STRING_RESET);
+				lastPosition = obj.transform.position;
+			}
 		}
 		catch (UnityException e)
 		{
@@ -60,21 +42,21 @@ public class ObjectSpawner : MonoBehaviour {
 		}
 	}
 
-	public void setObjectType(int type)
-	{
-		objectType = type;
-	}
-	
-	public int getObjectType()
-	{
-		return objectType;
-	}
-	
 	GameObject getObjectFromPool()
 	{
-		GameObject obj = NewObjectPoolScript.current.GetPooledObject(objectType);
+		GameObject obj = NewObjectPoolScript.current.GetPooledObject(Constants.POOLOBJECT_ENEMY);
 		return obj;
 	}
+
+	void createFormation()
+	{
+		for (int i = 0; i < numEnemies; i++) {
+			enemySpacing [i] = 1;
+		}
+		enemySpacing [1] = 3;
+		enemySpacing [3] = 2;
+	}
+
 	
 	void placeObjectOffScreen(GameObject obj)
 	{
@@ -85,13 +67,22 @@ public class ObjectSpawner : MonoBehaviour {
 		spawnPosition.y += Constants.SPAWN_Y_POSITION;
 		obj.transform.position = spawnPosition;
 	}
-
+	
 	float getScreenXOfSpriteOffScreen(GameObject obj)
 	{
 		float spriteWidth = obj.renderer.bounds.size.x;
 		float pixelsPerUnit = Constants.PIXELS_PER_UNIT;
 		return Screen.width + (spriteWidth / 2)*pixelsPerUnit;
 	}
+
+	void adjustSpacing(GameObject obj, int positionInFormation, Vector3 lastEnemyPosition)
+	{
+		float spriteWidth = obj.renderer.bounds.size.x;
+		Vector3 position = lastEnemyPosition;
+		position.x += spriteWidth * enemySpacing[positionInFormation];
+		obj.transform.position = position;
+	}
+
 	
 	void putObjectOnGround(GameObject obj)
 	{
@@ -105,15 +96,5 @@ public class ObjectSpawner : MonoBehaviour {
 		Vector3 spawnPosition = obj.transform.position;
 		spawnPosition.y = groundPos.transform.position.y;
 		obj.transform.position = spawnPosition;
-	}
-
-	public int getMaxObjects()
-	{
-		return maxObjects;
-	}
-
-	public void setMaxObjects(int max)
-	{
-		maxObjects = max;
 	}
 }

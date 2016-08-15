@@ -16,7 +16,7 @@ public class GameLogic : MonoBehaviour {
 	void Start () {
 		level = 0;
 		setLevelText();
-		enemySpawner.setMaxObjects (2);
+//		enemySpawner.setMaxObjects (2);
 		boxSpawner.setMaxObjects (1);
 		highBoxSpawner.setMaxObjects (1);
 		scoreLastUpdate = 0;

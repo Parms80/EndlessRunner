@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Code/Enemy.cs">
+    <Files>
+      <File FileName="Assets/Code/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Code/EnemyWave.cs" Line="82" Column="43" />
+      <File FileName="Assets/Code/CollisionScript.cs" Line="31" Column="3" />
+      <File FileName="Assets/Code/Enemy.cs" Line="79" Column="1" />
+      <File FileName="Assets/Code/Humanoid.cs" Line="17" Column="36" />
+      <File FileName="Assets/Code/Constants.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Code" expanded="True">
+              <Node name="Enemy.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -40,6 +40,7 @@ public class CollisionScript : MonoBehaviour {
 
 	bool hasPlayerHitEnemy(Collider2D other)
 	{
+//		other.collider2D.enabled = false;
 		return other.gameObject.tag == Constants.STRING_ENEMY;
 	}
 

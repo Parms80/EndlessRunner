@@ -4,11 +4,15 @@ using System.Collections;
 public class Enemy : Humanoid {
 
 	private bool attacked;
+//	private Collider2D collisionBox;
 
 	public override void Start () {
 		base.Start ();
 		reset();
+		//		collider2D.enabled = false;
+//		collisionBox = gameObject.GetComponent<Collider2D>();
 	}
+
 	public override void reset(){
 		switchToState(Constants.RUNNING);
 		attacked = false;
@@ -70,9 +74,10 @@ public class Enemy : Humanoid {
 	private void MakeHumanFall (string otherObjectTag) {
 
 		if (otherObjectTag == Constants.STRING_PLAYERHITCOLLISION) {
+			
+//			this.collider2D.enabled = false;
+//			collisionBox.enabled = false;
 			base.takeHitAndFall();
 		}
 	}
-
-
 }
