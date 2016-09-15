@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Enemy : Humanoid {
+	
+	public EnemyWave enemyWaveScript;
 
 	private bool attacked;
 //	private Collider2D collisionBox;
@@ -78,6 +80,23 @@ public class Enemy : Humanoid {
 //			this.collider2D.enabled = false;
 //			collisionBox.enabled = false;
 			base.takeHitAndFall();
+		}
+	}
+		
+	protected void HandleObjectOffScreen()
+	{
+		this.gameObject.SetActive (false);
+		checkNumberOfEnemiesRemaining ();
+		
+	}
+	
+	private void checkNumberOfEnemiesRemaining()
+	{
+		int numEnemies = NewObjectPoolScript.current.countActiveObjectsOfType (Constants.POOLOBJECT_ENEMY);
+
+		if (numEnemies == 1) 
+		{
+			EnemyWave.enemyWaveGenerator.createNewWave();
 		}
 	}
 }

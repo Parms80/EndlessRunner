@@ -3,19 +3,26 @@ using System.Collections;
 
 public class EnemyWave : MonoBehaviour {
 
+	public static EnemyWave enemyWaveGenerator;
 	private int[] enemySpacing;
 	private int numEnemies;
 	public Camera cam;
 
+	void Awake()
+	{
+		enemyWaveGenerator = this;
+	}
+
 	void Start()
 	{
-		numEnemies = 4;
 		enemySpacing = new int[10];
 		createNewWave ();
 	}
 
-	void createNewWave()
+	public void createNewWave()
 	{
+		numEnemies = 4;
+
 		try
 		{
 			createFormation();
@@ -51,10 +58,8 @@ public class EnemyWave : MonoBehaviour {
 	void createFormation()
 	{
 		for (int i = 0; i < numEnemies; i++) {
-			enemySpacing [i] = 1;
+			enemySpacing [i] = Random.Range(1,3);
 		}
-		enemySpacing [1] = 3;
-		enemySpacing [3] = 2;
 	}
 
 	

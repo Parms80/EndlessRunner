@@ -69,6 +69,7 @@ public class Humanoid : MonoBehaviour {
 		this.gameObject.SetActive (false);
 	}
 
+
 	protected bool hasAnimationFinished()
 	{
 		return anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && 
@@ -79,4 +80,5 @@ public class Humanoid : MonoBehaviour {
 	{
 		return state;
 	}
+
 }
